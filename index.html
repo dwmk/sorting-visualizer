@@ -52,10 +52,10 @@
       </div>
       <div class="bg-white p-4 rounded shadow">
         <h2 class="text-lg font-semibold mb-2">Sort Progress</h2>
-        <p><strong>Algorithm:</strong> <span id="stat-algo"></span></p>
-        <p><strong>Iterations:</strong> <span id="stat-iter"></span></p>
-        <p><strong>Current Index:</strong> <span id="stat-index"></span></p>
-        <p><strong>Pivot:</strong> <span id="stat-pivot"></span></p>
+        <p><strong>Algorithm: <span id="stat-algo"></span></strong></p>
+        <p><strong>Iterations: <span id="stat-iter"></span></strong></p>
+        <p><strong>Current Index: <span id="stat-index"></span></strong></p>
+        <p><strong>Pivot: <span id="stat-pivot"></span></strong></p>
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@ function draw(data, highlighted = []) {
     // Label — position dynamically based on bar height
     const label = document.createElement('div');
     label.textContent = val;
-    label.className = 'px-1.5 py-0.5 text-xs rounded font-mono text-center select-none shadow-sm absolute';
+    label.className = 'px-1.5 py-0.5 text-s rounded font-mono text-center select-none shadow-sm absolute';
     label.style.left = '50%';
     label.style.transform = 'translateX(-50%)';
     label.style.bottom = `${heightPercent}%`; // <-- key: align with top of bar
